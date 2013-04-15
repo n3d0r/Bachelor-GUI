@@ -1,0 +1,5 @@
+c:\users\n3d0r\documents\visual studio 2010\Projects\BookIT\BookIT\bin\BookIT.dll
+c:\users\n3d0r\documents\visual studio 2010\Projects\BookIT\BookIT\bin\BookIT.pdb
+c:\users\n3d0r\documents\visual studio 2010\Projects\BookIT\BookIT\obj\Debug\BookIT.dll
+c:\users\n3d0r\documents\visual studio 2010\Projects\BookIT\BookIT\obj\Debug\BookIT.pdb
+C:\Users\N3d0r\documents\visual studio 2010\Projects\BookIT\BookIT\obj\Debug\BookIT.csprojResolveAssemblyReference.cache
