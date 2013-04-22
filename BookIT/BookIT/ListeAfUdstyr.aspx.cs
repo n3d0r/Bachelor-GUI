@@ -13,5 +13,20 @@ namespace BookIT
         {
 
         }
+
+        protected void ÆndreLokale_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ÆndreLokale.aspx");
+        }
+
+        protected void TilføjLokale_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("TilføjLokale.aspx");
+        }
+
+        protected void SletLokale_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("SuperLokaleListe.aspx");
+        }
     }
 }

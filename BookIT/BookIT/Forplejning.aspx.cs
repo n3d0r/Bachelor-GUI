@@ -29,12 +29,14 @@ namespace BookIT
 
         protected void ForplejningButton_Click(object sender, EventArgs e)
         {
-            CheckBox cb = GridView1.Rows[0].FindControl("checkBox9") as CheckBox;
-            if (cb.Checked)
-            {
+            if(Page.IsValid){
+                CheckBox cb = GridView1.Rows[0].FindControl("checkBox9") as CheckBox;
+                if (cb.Checked)
+                {
                 GridView1.Rows[0].Cells[2].BackColor = Color.Black;
+                }
             }
-
+            Response.Redirect("DineBookinger.aspx");
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -52,6 +54,11 @@ namespace BookIT
         }
 
         protected void CheckBox_CheckChanged(object sender, EventArgs e)
+        {
+            Response.Redirect("DineBookinger.aspx");
+        }
+
+        protected void FjernForplejning_Click(object sender, EventArgs e)
         {
             Response.Redirect("DineBookinger.aspx");
         }

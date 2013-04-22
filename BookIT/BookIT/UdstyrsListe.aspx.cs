@@ -23,5 +23,10 @@ namespace BookIT
         {
             Response.Redirect("UdstyrsListe.aspx");
         }
+
+        protected void SletUdstyrButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UdstyrsListe.aspx");
+        }
     }
 }

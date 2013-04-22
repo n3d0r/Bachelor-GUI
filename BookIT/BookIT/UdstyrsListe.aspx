@@ -7,10 +7,7 @@
         {
             width: 70%;
             margin-top: 0px;
-        }
-        .style2
-        {
-            width: 305px;
+            height: 231px;
         }
         .style3
         {
@@ -27,41 +24,44 @@
     <table class="style1">
         <tr>
             <td class="style3">
-                <table class="style1">
-                    <tr>
-                        <td class="style2">
-                            Type:
-                            <asp:DropDownList ID="DropDownList1" runat="server">
-                            </asp:DropDownList>
-                            <asp:GridView ID="GridView1" runat="server">
+                
+                            <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" 
+                                GridLines="Both" Width="451px">
+                                <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                                 <Columns>
                                     <asp:BoundField HeaderText="Navn" />
                                     <asp:BoundField HeaderText="Kommentar" />
+                                    <asp:TemplateField HeaderText="Type"></asp:TemplateField>
                                 </Columns>
+                                <EditRowStyle BackColor="#999999" />
+                                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                <HeaderStyle BackColor="#f47a07" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                                <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                                <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                                <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                                <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                                <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                             </asp:GridView>
-                        </td>
-                        <td>
-                            <asp:Button ID="ÆndreUdstyrButton" runat="server" Text="Ændre udstyr" 
-                                onclick="ÆndreUdstyrButton_Click" CssClass="buttonStyle1" />
                             <br />
-                            <br />
+                
                             <asp:Button ID="SletUdstyrButton" runat="server" Text="Slet udstyr" 
-                                CssClass="buttonStyle1" />
-                        </td>
-                    </tr>
-                </table>
+                                CssClass="buttonStyle1" onclick="SletUdstyrButton_Click" />
+                            &nbsp;<asp:Button ID="ÆndreUdstyrButton" runat="server" Text="Ændre udstyr" 
+                                onclick="ÆndreUdstyrButton_Click" CssClass="buttonStyle1" />
             </td>
             <td>
             <h2>Tilføj udstyr</h2>
                 <p>Navn:
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="UdstyrsNavnTextBox" runat="server"></asp:TextBox>
                 </p>
                 <p>Kommentar:</p>
                 <p>
-                    <asp:TextBox ID="TextBox2" runat="server" Height="167px" TextMode="MultiLine"></asp:TextBox>
+                    <asp:TextBox ID="KommentarTextBox" runat="server" Height="142px" TextMode="MultiLine" 
+                        Width="405px"></asp:TextBox>
                 </p>
                 <p>Udstyrstype:
-                    <asp:DropDownList ID="DropDownList2" runat="server">
+                    <asp:DropDownList ID="UdstyrsTypeDropDown" runat="server">
                     </asp:DropDownList>
                 </p>
                 <p>

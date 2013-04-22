@@ -13,15 +13,6 @@ namespace BookIT {
     public partial class About {
         
         /// <summary>
-        /// DropDownList1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
-        
-        /// <summary>
         /// GridView1 control.
         /// </summary>
         /// <remarks>
@@ -29,15 +20,6 @@ namespace BookIT {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
-        
-        /// <summary>
-        /// ÆndreUdstyrButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ÆndreUdstyrButton;
         
         /// <summary>
         /// SletUdstyrButton control.
@@ -49,31 +31,40 @@ namespace BookIT {
         protected global::System.Web.UI.WebControls.Button SletUdstyrButton;
         
         /// <summary>
-        /// TextBox1 control.
+        /// ÆndreUdstyrButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.Button ÆndreUdstyrButton;
         
         /// <summary>
-        /// TextBox2 control.
+        /// UdstyrsNavnTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox UdstyrsNavnTextBox;
         
         /// <summary>
-        /// DropDownList2 control.
+        /// KommentarTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.WebControls.TextBox KommentarTextBox;
+        
+        /// <summary>
+        /// UdstyrsTypeDropDown control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList UdstyrsTypeDropDown;
         
         /// <summary>
         /// TilføjUdstyrButton control.

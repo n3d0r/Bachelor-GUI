@@ -8,9 +8,7 @@
         Log In
     </h2>
     <p>
-        Please enter your username and password.
-        <asp:HyperLink ID="RegisterHyperLink" runat="server" EnableViewState="false">Register</asp:HyperLink> if you don't have an account.
-    </p>
+        Please enter your username and password.</p>
     <asp:Login ID="LoginUser" runat="server" EnableViewState="false" RenderOuterTable="false">
         <LayoutTemplate>
             <span class="failureNotification">
@@ -41,7 +39,8 @@
                     </p>
                 </fieldset>
                 <p class="submitButton">
-                    <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Log In" ValidationGroup="LoginUserValidationGroup"/>
+                    <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Log In" 
+                        ValidationGroup="LoginUserValidationGroup" OnClick="LoginButton_Click" CssClass="buttonStyle1"/>
                 </p>
             </div>
         </LayoutTemplate>

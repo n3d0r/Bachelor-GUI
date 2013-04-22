@@ -31,10 +31,12 @@
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
-                        <asp:MenuItem NavigateUrl="~/LokaleListe.aspx" Text="Lokaleliste"/>
+                        <asp:MenuItem NavigateUrl="~/LokaleListe.aspx" Text="Book lokale"/>
                         <asp:MenuItem NavigateUrl="~/UdstyrsListe.aspx" Text="Udstyrsliste"/>
                         <asp:MenuItem NavigateUrl="~/BookingListe.aspx" Text="Booking-liste"/>
                         <asp:MenuItem NavigateUrl="~/DineBookinger.aspx" Text="Dine bookinger"/>
+                        <asp:MenuItem NavigateUrl="~/SuperLokaleListe.aspx" Text="Lokaleliste" />
+                        <asp:MenuItem NavigateUrl="~/PersonBookingListe.aspx" Text="Find bookinger" />
                     </Items>
                 </asp:Menu>
             </div>

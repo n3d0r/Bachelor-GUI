@@ -12,13 +12,15 @@
             <tr>
                 <td class="style2">
                     <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" 
-                        GridLines="Both" Width="674px">
+                        Width="674px">
                         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                         <Columns>
                             <asp:BoundField HeaderText="Lokale" />
                             <asp:BoundField HeaderText="Kapacitet" />
                             <asp:BoundField HeaderText="Booket" />
                             <asp:BoundField HeaderText="Status" />
+                            <asp:BoundField HeaderText="Forplejning" />
+                            <asp:BoundField HeaderText="Udstyr" />
                         </Columns>
                         <EditRowStyle BackColor="#999999" />
                         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />

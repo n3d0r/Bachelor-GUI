@@ -1,71 +1,47 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ÆndreLokale.aspx.cs" Inherits="BookIT.ÆndreLokale" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <style type="text/css">
-        .style1
-        {
-            width: 100%;
-        }
-        .style2
-        {
-            width: 252px;
-        }
-        .style3
-        {
-            width: 269px;
-        }
-    </style>
-</asp:Content>
+    </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <h2>Ændre lokale</h2>
-    <p>&nbsp;</p>
-    <asp:Panel ID="Panel1" runat="server" Height="322px" style="margin-left: 27px" 
-        Width="801px">
-        <table class="style1">
-            <tr>
-                <td class="style2">
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                    <br />
-                    <br />
-                    Kapcitet:
-                    <asp:DropDownList ID="DropDownList1" runat="server">
-                    </asp:DropDownList>
-                </td>
-                <td class="style3">
+    <p>Navn
+        <asp:TextBox ID="LokaleNavnTextBox" runat="server" ReadOnly="True"></asp:TextBox>
+&nbsp;&nbsp;&nbsp; Kapacitet
+        <asp:TextBox ID="KapacitetTextBox" runat="server" 
+            ontextchanged="TextBox5_TextChanged"></asp:TextBox>
+    </p>
+    <asp:Panel ID="Panel1" runat="server" Height="251px" style="margin-left: 27px" 
+        Width="794px">
+
                 <h3>Tilføj udstyr:</h3>
 
-                    <p>
-                        Navn:
-                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-                    </p>
-                    <p>
-                        Kommentar</p>
-                    <p>
-                        :<asp:TextBox ID="TextBox3" runat="server" Height="92px" TextMode="MultiLine" 
-                            Width="247px"></asp:TextBox>
-                    </p>
-                    <p>
-                        Udstyrstype:
-                        <asp:DropDownList ID="DropDownList2" runat="server">
-                        </asp:DropDownList>
-                    </p>
-                    <p>
-                        <asp:Button ID="Button1" runat="server" Text="Tilføj udstyr" 
-                            onclick="Button1_Click" CssClass="buttonStyle1" />
-                    </p>
-
-                </td>
-                <td>
-                    <asp:GridView ID="GridView1" runat="server">
+                    <asp:GridView ID="GridView1" runat="server" CellPadding="4" 
+                    ForeColor="#333333" Width="512px">
+                        <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                         <Columns>
-                            <asp:BoundField HeaderText="Navn:" />
-                            <asp:BoundField HeaderText="." />
+                            <asp:BoundField HeaderText="Navn" />
+                            <asp:BoundField HeaderText="Kommentar" />
+                            <asp:BoundField HeaderText="Type" />
+                            <asp:TemplateField>
+                            <ItemTemplate>
+                            <asp:CheckBox ID="CheckBox21" runat="server" />
+                            </ItemTemplate>
+                            </asp:TemplateField>
                         </Columns>
+                        <EditRowStyle BackColor="#999999" />
+                        <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                        <HeaderStyle BackColor="#f47a07" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                        <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                        <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                        <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                        <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                     </asp:GridView>
-                </td>
-            </tr>
-        </table>
     </asp:Panel>
-    <br />
-    <asp:Button ID="GemÆndringButton" runat="server" Text="Gem ændringer" 
-        onclick="GemÆndringButton_Click" CssClass="buttonStyle1" />
+    <asp:Button ID="FjernUdstyrButton" runat="server" Text="Fjern udstyr" 
+        CssClass="buttonStyle1" onclick="FjernUdstyr_Click" />
+                        &nbsp;<asp:Button ID="TilføjUdstyrButton" runat="server" Text="Tilføj udstyr" 
+                            onclick="TilføjUdstyr_Click" CssClass="buttonStyle1" />
+    &nbsp;<asp:Button ID="AfslutButton" runat="server" Text="Afslut" 
+        CssClass="buttonStyle1" onclick="Afslut_Click"/>
 </asp:Content>

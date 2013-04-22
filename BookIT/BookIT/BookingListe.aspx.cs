@@ -13,5 +13,15 @@ namespace BookIT
         {
 
         }
+
+        protected void Godkend_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("BookingListe.aspx");
+        }
+
+        protected void Afvis_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("BookingListe.aspx");
+        }
     }
 }

@@ -13,5 +13,15 @@ namespace BookIT
         {
 
         }
+
+        protected void FortrydButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DineBookinger.aspx");
+        }
+
+        protected void ÆndringerButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DineBookinger.aspx");
+        }
     }
 }

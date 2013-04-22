@@ -13,39 +13,57 @@ namespace BookIT {
     public partial class ÆndreUdstyr {
         
         /// <summary>
-        /// TextBox2 control.
+        /// LokaleNavnTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox LokaleNavnTextBox;
         
         /// <summary>
-        /// TextBox1 control.
+        /// KommentarTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox KommentarTextBox;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// InventarCheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.CheckBox InventarCheckBox;
         
         /// <summary>
-        /// Button1 control.
+        /// UdlånCheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.CheckBox UdlånCheckBox;
+        
+        /// <summary>
+        /// UdstyrsTypeDropDown control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList UdstyrsTypeDropDown;
+        
+        /// <summary>
+        /// ÆndreUdstyrButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ÆndreUdstyrButton;
     }
 }

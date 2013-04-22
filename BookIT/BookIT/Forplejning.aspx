@@ -1,24 +1,30 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Forplejning.aspx.cs" Inherits="BookIT.Forplejning" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-   <h2>Forplejning</h2>
+   <h2>Forplejning<asp:ScriptManager ID="ScriptManager1" runat="server">
+       </asp:ScriptManager>
+    </h2>
     <p>
-        <asp:Image ID="Image1" runat="server" />
+        &nbsp;&nbsp;
+        <asp:Image ID="Image1" runat="server" Height="30px" 
+            ImageUrl="~/Images/BlåBoks.png" Width="30px" />
 &nbsp;= Valgte&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Image ID="Image2" runat="server" />
+        <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/RødBoks.png" 
+            Width="30px" />
 &nbsp;= Ikke til rådighed</p>
     <p>type
-        <asp:DropDownList ID="DropDownList1" runat="server">
+        <asp:DropDownList ID="MorgenMadTypeDropDown" runat="server">
         </asp:DropDownList>
 &nbsp; Lokale:
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp; Dato:<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <asp:TextBox ID="LokaleNavnTextBox" runat="server" ReadOnly="True"></asp:TextBox>
+&nbsp;&nbsp;&nbsp; Dato:<asp:TextBox ID="DatoTextBox" runat="server" ReadOnly="True"></asp:TextBox>
         <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" 
             onselectedindexchanged="GridView1_SelectedIndexChanged" OnDataBound="GridView_OnDataBound">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
-                <asp:BoundField HeaderText="Navn:"/>
+                <asp:BoundField HeaderText="Navn"/>
                 <asp:BoundField HeaderText="Type"  />
                 <asp:TemplateField HeaderText="09:00">
                     <ItemTemplate>
@@ -80,11 +86,12 @@
                             <asp:CheckBox ID="CheckBox20" runat="server" />
                     </ItemTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="21:00" >
+                <asp:TemplateField HeaderText="Antal">
                     <ItemTemplate>
-                            <asp:CheckBox ID="CheckBox21" runat="server" />
+                        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                     </ItemTemplate>
                 </asp:TemplateField>
+                <asp:BoundField HeaderText="Pris per styk" />
             </Columns>
             <EditRowStyle BackColor="#999999" />
             <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -98,7 +105,10 @@
         </asp:GridView>
     </p>
     <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="ForplejningButton" runat="server" Text="Tilføj forplejning" 
             onclick="ForplejningButton_Click" CssClass="buttonStyle1" />
+        &nbsp;<asp:Button ID="Button1" runat="server" Text="Fjern forplejning" 
+            CssClass="buttonStyle1" onclick="FjernForplejning_Click" />
     </p>
 </asp:Content>

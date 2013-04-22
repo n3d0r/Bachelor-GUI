@@ -10,34 +10,25 @@
 namespace BookIT {
     
     
-    public partial class ÆndreLokale {
+    public partial class PersonBookingListe {
         
         /// <summary>
-        /// LokaleNavnTextBox control.
+        /// EmailTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LokaleNavnTextBox;
+        protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
         
         /// <summary>
-        /// KapacitetTextBox control.
+        /// FindBookinger control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox KapacitetTextBox;
-        
-        /// <summary>
-        /// Panel1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.Button FindBookinger;
         
         /// <summary>
         /// GridView1 control.
@@ -49,30 +40,21 @@ namespace BookIT {
         protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// FjernUdstyrButton control.
+        /// GodkendButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button FjernUdstyrButton;
+        protected global::System.Web.UI.WebControls.Button GodkendButton;
         
         /// <summary>
-        /// TilføjUdstyrButton control.
+        /// AfvisButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button TilføjUdstyrButton;
-        
-        /// <summary>
-        /// AfslutButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AfslutButton;
+        protected global::System.Web.UI.WebControls.Button AfvisButton;
     }
 }

@@ -10,52 +10,52 @@
 namespace BookIT {
     
     
-    public partial class ÆndreLokale {
+    public partial class TilføjUdstyr {
         
         /// <summary>
-        /// LokaleNavnTextBox control.
+        /// UdstyrsNavnTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LokaleNavnTextBox;
+        protected global::System.Web.UI.WebControls.TextBox UdstyrsNavnTextBox;
         
         /// <summary>
-        /// KapacitetTextBox control.
+        /// KommentarTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox KapacitetTextBox;
+        protected global::System.Web.UI.WebControls.TextBox KommentarTextBox;
         
         /// <summary>
-        /// Panel1 control.
+        /// InventarCheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.CheckBox InventarCheckBox;
         
         /// <summary>
-        /// GridView1 control.
+        /// UdlånCheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.CheckBox UdlånCheckBox;
         
         /// <summary>
-        /// FjernUdstyrButton control.
+        /// UdstyrsTypeDropDown control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button FjernUdstyrButton;
+        protected global::System.Web.UI.WebControls.DropDownList UdstyrsTypeDropDown;
         
         /// <summary>
         /// TilføjUdstyrButton control.
@@ -65,14 +65,5 @@ namespace BookIT {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button TilføjUdstyrButton;
-        
-        /// <summary>
-        /// AfslutButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AfslutButton;
     }
 }

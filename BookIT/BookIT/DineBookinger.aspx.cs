@@ -16,7 +16,7 @@ namespace BookIT
 
         protected void UdstyrButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("UdstyrsListe.aspx");
+            Response.Redirect("BookUdstyr.aspx");
         }
 
         protected void ÆndreBookButton_Click(object sender, EventArgs e)

@@ -8,29 +8,84 @@
         Lokaleliste
     </h2>
     <p>
-        <asp:Image ID="Image1" runat="server" />
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/RødBoks.png" />
 &nbsp;= Booket&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Image ID="Image2" runat="server" />
+        <asp:Image ID="Image2" runat="server" BorderColor="Black" BorderStyle="Solid" 
+            BorderWidth="1px" ImageUrl="~/Images/HvidBoks.png" />
 &nbsp;= Ledig&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Image ID="Image3" runat="server" />
-&nbsp;= Valgte</p>
+        <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/BlåBoks.png" />
+&nbsp;= Dine bookinger</p>
     <p>
-        Sal:
-        <asp:DropDownList ID="DropDownList1" runat="server">
-            <asp:ListItem>Alle</asp:ListItem>
-            <asp:ListItem>1.Sal</asp:ListItem>
-            <asp:ListItem>2.Sal</asp:ListItem>
-            <asp:ListItem>3.Sal</asp:ListItem>
-            <asp:ListItem>4.Sal</asp:ListItem>
-            <asp:ListItem>5.Sal</asp:ListItem>
-        </asp:DropDownList>
          Dato:
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:TextBox ID="DatoTextBox" runat="server" ReadOnly="True"></asp:TextBox>
     </p>
     <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" 
-        OnPreRender="gvSummary_PreRender">
+        OnPreRender="gvSummary_PreRender" AllowPaging="True">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
+            <asp:BoundField HeaderText="Navn" />
+            <asp:BoundField HeaderText="Kapacitet" />
+            <asp:BoundField HeaderText="Udstyr" />
+            <asp:TemplateField HeaderText="09:00">
+                    <ItemTemplate>
+                            <asp:CheckBox ID="CheckBox9" runat="server"/>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="10:00" >
+                    <ItemTemplate>
+                            <asp:CheckBox ID="CheckBox10" runat="server" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="11:00" >
+                    <ItemTemplate>
+                            <asp:CheckBox ID="CheckBox11" runat="server" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="12:00" >
+                    <ItemTemplate>
+                            <asp:CheckBox ID="CheckBox12" runat="server" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="13:00" >
+                    <ItemTemplate>
+                            <asp:CheckBox ID="CheckBox13" runat="server" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="14:00" >
+                    <ItemTemplate>
+                            <asp:CheckBox ID="CheckBox14" runat="server" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="15:00" >
+                    <ItemTemplate>
+                            <asp:CheckBox ID="CheckBox15" runat="server" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="16:00" >
+                    <ItemTemplate>
+                            <asp:CheckBox ID="CheckBox16" runat="server" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="17:00" >
+                    <ItemTemplate>
+                            <asp:CheckBox ID="CheckBox17" runat="server" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="18:00" >
+                    <ItemTemplate>
+                            <asp:CheckBox ID="CheckBox18" runat="server" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="19:00" >
+                    <ItemTemplate>
+                            <asp:CheckBox ID="CheckBox19" runat="server" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="20:00" >
+                    <ItemTemplate>
+                            <asp:CheckBox ID="CheckBox20" runat="server" />
+                    </ItemTemplate>
+                </asp:TemplateField>
         </Columns>
         <EditRowStyle BackColor="#999999" />
         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -43,6 +98,7 @@
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
     <p1>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="BookLokaleButton" runat="server" CssClass="buttonStyle1" 
             onclick="BookLokaleButton_Click" Text="Book lokale" />
     </p1>
